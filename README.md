@@ -1,16 +1,6 @@
 
 
-&nbsp;
-
-![screenshot-desktop](https://user-images.githubusercontent.com/353959/66987533-40eae100-f0c1-11e9-822e-cbaf38fb8e3f.png)
-
-&nbsp;
-
-# First time using a Ghost theme?
-
-Ghost uses a simple templating language called [Handlebars](http://handlebarsjs.com/) for its themes.
-
-This theme has lots of code comments to help explain what's going on just by reading the code. Once you feel comfortable with how everything works, we also have full [theme API documentation](https://ghost.org/docs/themes/) which explains every possible Handlebars helper and template.
+### Freelance work- Synart
 
 **The main files are:**
 
