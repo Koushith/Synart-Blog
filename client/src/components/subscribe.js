@@ -62,47 +62,26 @@ export default function Subscribe() {
     });
     //for mailChimp integration
     const { error } = await res.json();
-    handleMailChimpResponse(
-      error,
-      'Success! 🎉 You are now subscribed to the newsletter.'
-    );
+    handleMailChimpResponse(error, 'Success! 🎉 You are now subscribed to the newsletter.');
     // For sendGrid integration
     const text = await res.text();
     handleSendGridResponse(res.status, text);
   };
   return (
-    <div className="subscribe__area">
+    <div className='subscribe__area'>
       <form onSubmit={subscribe}>
         <Flex sx={styles.subscribeForm}>
-          <label htmlFor="email" sx={{ variant: 'styles.srOnly' }}>
+          <label htmlFor='email' sx={{ variant: 'styles.srOnly' }}>
             Email Address
           </label>
-          <Input
-            ref={inputEl}
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Enter your email"
-          />
+          <Input ref={inputEl} id='email' name='email' type='email' placeholder='Enter your email' />
 
           <div>
-            {status.info.error && (
-              <div className="error">Error: {status.info.msg}</div>
-            )}
-            {!status.info.error && status.info.msg && (
-              <div className="success">{status.info.msg}</div>
-            )}
+            {status.info.error && <div className='error'>Error: {status.info.msg}</div>}
+            {!status.info.error && status.info.msg && <div className='success'>{status.info.msg}</div>}
           </div>
-          <Button
-            type="submit"
-            disabled={status.submitting}
-            variant="subscribeButton"
-          >
-            {!status.submitting
-              ? !status.submitted
-                ? 'Subscribe'
-                : 'Submitted'
-              : 'Submitting...'}
+          <Button type='submit' disabled={status.submitting} variant='subscribeButton'>
+            {!status.submitting ? (!status.submitted ? 'Subscribe' : 'Submitted') : 'Submitting...'}
           </Button>
         </Flex>
       </form>

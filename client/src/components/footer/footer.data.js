@@ -1,4 +1,4 @@
-import { FaFacebook, FaTwitter, FaGithub, FaDribbble } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaGithub, FaGoogle } from 'react-icons/fa';
 
 export default [
   {
@@ -43,27 +43,7 @@ export default [
       },
     ],
   },
-  {
-    header: 'My Account',
-    items: [
-      {
-        path: '/',
-        label: 'Press inquiries',
-      },
-      {
-        path: '/',
-        label: 'Social media ',
-      },
-      {
-        path: '/',
-        label: 'directories',
-      },
-      {
-        path: '/',
-        label: 'Images & B-roll',
-      },
-    ],
-  },
+
   {
     header: 'Contact',
     items: [
@@ -87,9 +67,9 @@ export default [
       },
       {
         path: '/',
-        label: 'Dribbble',
-        name: 'dribbble',
-        icon: <FaDribbble />,
+        label: 'Google',
+        name: 'google',
+        icon: <FaGoogle />,
       },
     ],
   },

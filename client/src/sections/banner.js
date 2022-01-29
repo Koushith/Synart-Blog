@@ -32,32 +32,21 @@ const data = [
 
 export default function Banner() {
   return (
-    <section sx={styles.banner} id="home">
+    <section sx={styles.banner} id='home'>
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
-          <Heading as="h1" variant="heroPrimary">
-            A Creative way to grow your Exciting Business model
+          <Heading as='h1' variant='heroPrimary'>
+            Let Robots Do your Jobs
           </Heading>
-          <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+          <Text as='p' variant='heroSecondary'>
+            we offer intelligent automation solutions that are designed to take over repetitive, mental tasks and
+            increasee efficiency.
           </Text>
           <Subscribe />
-          <Flex sx={styles.sponsorBox}>
-            <Text sx={styles.sponsorTitle}>Sponsored by:</Text>
-            <Box sx={styles.sponsorBox.sponsor}>
-              {data.map((item, index) => (
-                <Link path={item.path} key={`client-key${index}`}>
-                  <Image src={item.image} alt={item.title} />
-                </Link>
-              ))}
-            </Box>
-          </Flex>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerThumb} alt="banner" width="740" height="782" />
+          <Image src={BannerThumb} alt='banner' width='740' height='782' />
         </Box>
       </Container>
     </section>

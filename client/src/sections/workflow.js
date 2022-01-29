@@ -6,21 +6,18 @@ import SectionHeader from 'components/section-header';
 const data = [
   {
     id: 1,
-    title: 'Connect with support',
-    text:
-      'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
+    title: 'Connect with us',
+    text: 'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
   },
   {
     id: 2,
     title: 'Explain you business idea',
-    text:
-      'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
+    text: 'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
   },
   {
     id: 3,
     title: 'Be partner & earn money',
-    text:
-      'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
+    text: 'Our homes are designed to be move-in ready. Think furnished common areas, super fast wifi, and flexible leases.',
   },
 ];
 
@@ -29,8 +26,8 @@ export default function WorkFlow() {
     <section sx={{ variant: 'section.workflow' }}>
       <Container>
         <SectionHeader
-          title="Let’s meet how its work"
-          description="Focus only on the meaning, we take care of the design. As soon as the meeting end you can export in one click into your preferred format."
+          title='Got a Project Idea?'
+          description='Focus only on the meaning, we take care of the Solution.'
         />
 
         <Grid sx={styles.grid}>
@@ -54,23 +51,8 @@ const styles = {
     pt: [0, null, null, null, null, null, null, null, 3],
     pb: [0, null, null, null, null, null, null, null, 5],
     mb: -1,
-    gridGap: [
-      '40px',
-      '45px',
-      '45px 30px',
-      null,
-      '60px 30px',
-      '50px 40px',
-      null,
-      '75px',
-    ],
-    gridTemplateColumns: [
-      'repeat(1,1fr)',
-      null,
-      'repeat(2,1fr)',
-      null,
-      'repeat(3,1fr)',
-    ],
+    gridGap: ['40px', '45px', '45px 30px', null, '60px 30px', '50px 40px', null, '75px'],
+    gridTemplateColumns: ['repeat(1,1fr)', null, 'repeat(2,1fr)', null, 'repeat(3,1fr)'],
   },
   card: {
     display: 'flex',

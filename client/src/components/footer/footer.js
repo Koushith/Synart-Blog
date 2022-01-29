@@ -4,7 +4,7 @@ import { Link } from 'components/link';
 import Logo from 'components/logo';
 import menuItems from './footer.data';
 
-import FooterLogo from 'assets/footer-logo.svg';
+import FooterLogo from 'assets/logo-dark.png';
 import CallToAction from 'sections/call-to-action';
 export default function Footer() {
   return (
@@ -13,15 +13,18 @@ export default function Footer() {
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
           <Box sx={styles.copyrightArea}>
-            <Box className="footer__logo">
-              <Logo src={FooterLogo} />
+            <Box className='footer__logo'>
+              <div style={{ display: 'flex' }}>
+                <Logo src={FooterLogo} style={{ width: '50px', height: 'auto' }} /> <h3>Synart Autmations</h3>
+              </div>
             </Box>
-            <nav className="footer__menu">
-              <Link path="/" label="Terms of use" />
-              <Link path="/" label="Privacy" />
-            </nav>
-            <Text as="p" sx={styles.copyrightArea.copyright}>
-              Copyright by 2020 RedQ, Inc
+            <br />
+            <Text footer__menu as='p' sx={styles.copyrightArea.copyright}>
+              Synart Automation Pvt Ltd 99, <br /> KHB Colony, 6th Cross, <br /> Vishweshwar Nagar, Hubli, Karnataka
+              580032.
+            </Text>
+            <Text as='p' sx={styles.copyrightArea.copyright}>
+              Design and Developed by <br /> Koushith Amin.
             </Text>
           </Box>
           <Flex sx={styles.footer.menuArea}>
@@ -31,12 +34,7 @@ export default function Footer() {
                   <Heading sx={styles.footer.heading}>{header}</Heading>
                   <nav>
                     {items.map(({ path, label, name, icon }, i) => (
-                      <Link
-                        className={name}
-                        path={path}
-                        key={i}
-                        sx={styles.footer.link}
-                      >
+                      <Link className={name} path={path} key={i} sx={styles.footer.link}>
                         {icon}
                         {label}
                       </Link>
@@ -67,14 +65,7 @@ const styles = {
       pr: [0, null, 4, 6],
     },
     menuArea: {
-      width: [
-        '100%',
-        null,
-        null,
-        null,
-        'calc(100% - 250px)',
-        'calc(100% - 300px)',
-      ],
+      width: ['100%', null, null, null, 'calc(100% - 250px)', 'calc(100% - 300px)'],
       justifyContent: 'space-between',
       flexWrap: 'wrap',
       pb: 3,

@@ -8,30 +8,19 @@ import ProfitThumb from 'assets/images/business-profit.png';
 import DrawingArrow from 'assets/drawing-arrow.svg';
 
 const data = {
-  title:
-    'We help you to boost your business profitable with our talent marketer',
+  title: 'ENCODE321',
   description:
-    'Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.',
+    'ENCODE321 is an interface control board that can read ywo quadrature encoders in parallel and also drive two motor drivers with PWM and direction signals to obtain colosed-loop dual motor control system with 12.C interface',
   btnName: 'Explore Details',
   btnURL: '#',
-  points: [
-    {
-      icon: <IoIosCheckmarkCircle />,
-      text: 'Unlimited design possibility',
-    },
-    {
-      icon: <IoIosCheckmarkCircle />,
-      text: 'Completely responsive features',
-    },
-  ],
 };
 
-export default function BusinessProfit() {
+export default function Product() {
   return (
     <section sx={{ variant: 'section.profit' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ProfitThumb} alt="Thumbnail" width="700" height="565" />
+          <Image src={ProfitThumb} alt='Thumbnail' width='700' height='565' />
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature
@@ -39,12 +28,12 @@ export default function BusinessProfit() {
             description={data.description}
             btnName={data.btnName}
             btnURL={data.btnURL}
-            points={data.points}
+            // points={data.points}
           />
         </Box>
       </Container>
       <Box sx={styles.bottomArrow}>
-        <Image src={DrawingArrow} alt="Arrow" />
+        <Image src={DrawingArrow} alt='Arrow' />
       </Box>
     </section>
   );

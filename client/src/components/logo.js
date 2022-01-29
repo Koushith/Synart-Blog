@@ -5,7 +5,7 @@ import { Link } from 'components/link';
 export default function Logo({ src, ...rest }) {
   return (
     <Link
-      path="/"
+      path='/'
       sx={{
         variant: 'links.logo',
         display: 'flex',
@@ -14,7 +14,7 @@ export default function Logo({ src, ...rest }) {
       }}
       {...rest}
     >
-      <Image src={src} alt="startup landing logo" />
+      <Image src={src} alt='synart' />
     </Link>
   );
 }
