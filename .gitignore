@@ -1,18 +1,16 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/client/node_modules
+/node_modules
 /.pnp
 .pnp.js
 
-/node_modules
-client/node_modules
-blog-backend/node_modules
-middleware/node_modules
-.blog.pem
+/blog.pem
 
 # testing
 /coverage
+
+
 
 # next.js
 /.next/
@@ -29,5 +27,3 @@ middleware/node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-.vercel
