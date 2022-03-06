@@ -1,9 +1,13 @@
-## Safient website
+## Synart Website
 
-Official website of Safient project
+Official website of Synart Automations
 
-### A few links
-* [Website](https://safient.co)
-* [Web App](https://app.safient.co)
-* [Twitter](https://twitter.con/safientio)
-* [Discord](https://discord.safient.io)
+## TechStack
+
+- React/NextJS
+- TailwindCSS
+- GhostCMS
+
+### Preview
+
+https://www.loom.com/share/258772fa9a674622b64d7dafc2c17887
