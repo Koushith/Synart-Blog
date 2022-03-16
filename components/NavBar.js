@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import link from 'next/link';
 
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className='px-4  py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-5 sticky top-0 z-50 text-gray-900 bg-white'>
-      <div className='relative flex items-center justify-between  mx-auto lg:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-8 sticky  '>
+    <div className='px-4  py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-5  z-30 '>
+      <div className=' flex items-center justify-between  mx-auto lg:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-8   '>
         <img src='/logo.png' alt='logo' width='150px' />
         <ul className='flex items-center hidden space-x-8 lg:flex'>
           <li>
@@ -30,9 +31,7 @@ export const Nav = () => {
           </li>
           <li>
             <a
-              href='#services'
-              aria-label='Synart Docs'
-              title='Synart docs'
+              href='/services'
               class='font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-red-500'
             >
               Services

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from '@components/NavBar';
 import { Header } from '@components/Header';
-import { Services } from '@components/Services';
+import { Advantages } from '@components/Advantages';
 import { Cta } from '@components/Cta';
 import { Footer } from '@components/Footer';
 import { Product } from '@components/Product';
@@ -13,11 +13,10 @@ function IndexPage() {
     <div id='top'>
       <Nav />
       <Header />
-
-      <Services />
+      <Advantages />
       <Product />
 
-      <Cta />
+      {/* <Cta /> */}
       <Hiring />
       <Contact />
       <Footer />
