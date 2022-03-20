@@ -76,18 +76,26 @@
 } */
 
 .showcase {
-  /* position: absolute; */
+  position: relative;
   right: 0;
   width: 100%;
-  min-height: 92vh;
+  min-height: 100vh;
   padding: 100px;
-  display: flex;
+  display: inline-flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background: #111;
   transition: 0.5s;
   z-index: 2;
 }
+.navbar {
+  position: absolute;
+  top: 0;
+  width: -webkit-fill-available;
+  color: #fff;
+}
+
 .showcase.active {
   right: 300px;
 }
@@ -116,7 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto auto;
 }
 
 .text h2 {

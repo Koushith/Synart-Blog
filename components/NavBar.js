@@ -5,10 +5,7 @@ export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div
-      className='px-4  py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-5'
-      // style={{ position: 'relative', zIndex: 40 }}
-    >
+    <div className='px-4  py-5 mx-auto navbar sm:max-w-xl md:max-w-full  md:px-24 lg:px-5' style={{ zIndex: 50 }}>
       <div className=' flex items-center justify-between  mx-auto lg:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-1   '>
         <img src='/logo.png' alt='logo' width='150px' />
         <ul className='flex items-center hidden space-x-8 lg:flex'>
@@ -17,7 +14,7 @@ export const Nav = () => {
               href='/'
               aria-label='Our product'
               title='Our product'
-              className='font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-red-500'
+              className='font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-500'
             >
               Home
             </a>
@@ -27,7 +24,7 @@ export const Nav = () => {
               href='/about'
               aria-label='Synart blog'
               title='Synart blog'
-              className='font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-red-500'
+              className='font-medium tracking-wide  text-white transition-colors duration-200 hover:text-red-500'
             >
               About us
             </a>
@@ -35,7 +32,7 @@ export const Nav = () => {
           <li>
             <a
               href='/services'
-              class='font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-red-500'
+              class='font-medium tracking-wide text-white transition-colors duration-200 hover:text-red-500'
             >
               Services
             </a>
@@ -45,7 +42,7 @@ export const Nav = () => {
               href='https://docs.Synart.io'
               aria-label='Synart Docs'
               title='Synart docs'
-              class='font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-red-500'
+              class='font-medium tracking-wide  text-white transition-colors duration-200 hover:text-red-500'
             >
               Blog
             </a>
@@ -55,7 +52,7 @@ export const Nav = () => {
               href='#contact'
               aria-label='Synart GitHub'
               title='Synart GitHub'
-              class='font-medium tracking-wide text-gray-900 transition-colors duration-200 hover:text-red-500'
+              class='font-medium tracking-wide  text-white transition-colors duration-200 hover:text-red-500'
             >
               Contact Us
             </a>
@@ -75,12 +72,12 @@ export const Nav = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className='absolute top-0 left-0 w-full'>
+            <div className='absolute top-0 left-0 w-full bg-white'>
               <div className='p-5  border rounded shadow-sm'>
-                <div className='flex items-center justify-between mb-4'>
+                <div className='flex items-center justify-between mb-4 '>
                   <div>
                     <a href='/' aria-label='Company' title='Company' className='inline-flex items-center'>
-                      <svg
+                      {/* <svg
                         className='w-8 text-deep-purple-accent-400'
                         viewBox='0 0 24 24'
                         strokeLinejoin='round'
@@ -94,7 +91,7 @@ export const Nav = () => {
                         <rect x='3' y='17' width='7' height='6' />
                         <rect x='14' y='1' width='7' height='6' />
                         <rect x='14' y='11' width='7' height='12' />
-                      </svg>
+                      </svg> */}
                       <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>Synart</span>
                     </a>
                   </div>
@@ -121,7 +118,7 @@ export const Nav = () => {
                         href='https://docs.Synart.io/dev-overview'
                         aria-label='Our product'
                         title='Our product'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        className='font-medium tracking-wide  text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         About us
                       </a>
@@ -131,7 +128,7 @@ export const Nav = () => {
                         href='https://docs.Synart.io/'
                         aria-label='Synart Docs'
                         title='Synart Docs'
-                        class='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500'
+                        class='font-medium tracking-wide  text-gray-800 transition-colors duration-200 hover:text-red-500'
                       >
                         Blog
                       </a>
@@ -141,7 +138,7 @@ export const Nav = () => {
                         href='https://blog.Synart.io/'
                         aria-label='Product pricing'
                         title='Product pricing'
-                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-red-500'
+                        className='font-medium tracking-wide  text-gray-800 transition-colors duration-200 hover:text-red-500'
                       >
                         Contact
                       </a>

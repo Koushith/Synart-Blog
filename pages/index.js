@@ -8,6 +8,7 @@ import { Product } from '@components/Product';
 import { Contact } from '@components/Contact';
 import { Hiring } from '@components/Hiring';
 import { Test } from '@components/test';
+import { Testimonial } from '@components/Testimonial';
 
 function IndexPage() {
   return (
@@ -15,11 +16,13 @@ function IndexPage() {
       <Nav />
       <Test />
       <Advantages />
-      <Product />
+      {/* <Product /> */}
 
       {/* <Cta /> */}
-      <Hiring />
+      <Testimonial />
+
       <Contact />
+      <Hiring />
       <Footer />
     </div>
   );
