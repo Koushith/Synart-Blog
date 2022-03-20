@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import link from 'next/link';
-
+import { useRouter } from 'next/router';
 export const Nav = () => {
+  const router = useRouter();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const home = ' px-4  py-5 mx-auto  navbar sm:max-w-xl md:max-w-full  md:px-24 lg:px-5';
+  const nonHome = 'px-4  py-5 mx-auto bg-gray-500  navbar sm:max-w-xl md:max-w-full  md:px-24 lg:px-5';
+
   return (
-    <div className='px-4  py-5 mx-auto navbar sm:max-w-xl md:max-w-full  md:px-24 lg:px-5' style={{ zIndex: 50 }}>
+    <div className={router.pathname === '/' ? home : nonHome} style={{ zIndex: 50 }}>
       <div className=' flex items-center justify-between  mx-auto lg:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-1   '>
         <img src='/logo.png' alt='logo' width='150px' />
         <ul className='flex items-center hidden space-x-8 lg:flex'>

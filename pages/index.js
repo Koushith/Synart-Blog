@@ -16,10 +16,10 @@ function IndexPage() {
       <Nav />
       <Test />
       <Advantages />
-      {/* <Product /> */}
 
       {/* <Cta /> */}
       <Testimonial />
+      {/* <Product /> */}
 
       <Contact />
       <Hiring />
