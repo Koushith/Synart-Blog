@@ -7,12 +7,13 @@ import { Footer } from '@components/Footer';
 import { Product } from '@components/Product';
 import { Contact } from '@components/Contact';
 import { Hiring } from '@components/Hiring';
+import { Test } from '@components/test';
 
 function IndexPage() {
   return (
     <div id='top'>
       <Nav />
-      <Header />
+      <Test />
       <Advantages />
       <Product />
 

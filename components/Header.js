@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import { Nav } from './NavBar';
 export const Header = () => {
   return (
     // <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 video-wrapper'>
@@ -48,23 +49,22 @@ export const Header = () => {
     //     </video>
     //   </div>
     // </div>
-
-    <section class='showcase'>
-      <div class='video-container'>
-        {/* <video src='https://traversymedia.com/downloads/video.mov' autoplay muted loop></video> */}
-        <video autoPlay muted loop>
-          <source src='https://traversymedia.com/downloads/video.mov' type='video/mov' />
-          <source src='hero.mp4' type='video/mp4' />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class='content'>
-        <h1>Shoot For The Stars</h1>
-        <h3>Full screen video landing page</h3>
-        <a href='#about' class='btn'>
-          Read More
-        </a>
-      </div>
-    </section>
+    <>
+      <section className='bg-opacity-25 showcase bg-opacity-25'>
+        <div className='bg-opacity-25 video-container ' style={{ color: 'red' }}>
+          <video autoPlay muted loop>
+            <source src='hero.mp4' type='video/mp4' />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class='content'>
+          <h1>Shoot For The Stars</h1>
+          <h3>Full screen video landing page</h3>
+          <a href='#about' class='btn'>
+            Read More
+          </a>
+        </div>
+      </section>
+    </>
   );
 };

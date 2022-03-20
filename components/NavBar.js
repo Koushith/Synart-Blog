@@ -5,8 +5,11 @@ export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className='px-4  py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-5  z-30 '>
-      <div className=' flex items-center justify-between  mx-auto lg:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-8   '>
+    <div
+      className='px-4  py-5 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-5'
+      // style={{ position: 'relative', zIndex: 40 }}
+    >
+      <div className=' flex items-center justify-between  mx-auto lg:mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  lg:px-1   '>
         <img src='/logo.png' alt='logo' width='150px' />
         <ul className='flex items-center hidden space-x-8 lg:flex'>
           <li>
@@ -73,7 +76,7 @@ export const Nav = () => {
           </button>
           {isMenuOpen && (
             <div className='absolute top-0 left-0 w-full'>
-              <div className='p-5 bg-white border rounded shadow-sm'>
+              <div className='p-5  border rounded shadow-sm'>
                 <div className='flex items-center justify-between mb-4'>
                   <div>
                     <a href='/' aria-label='Company' title='Company' className='inline-flex items-center'>

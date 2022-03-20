@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       colors: {
         'blue-opaque': 'rgb(13 42 148 / 18%)',
+        'red-500': '#ff3333',
       },
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
